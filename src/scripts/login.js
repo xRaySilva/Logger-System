@@ -1,32 +1,42 @@
-const username = document.querySelector("#username-login")
+const userName = document.querySelector("#userName-login")
 const password = document.querySelector("#password-login")
 const checkbox = document.querySelector("#checkbox-login")
 const buttonLogin = document.querySelector("#button-login")
 
 
 buttonLogin.addEventListener("click", (event) =>{
+    event.preventDefault()
 
-    const usernameValue = username.value.toLowerCase()
+    const userNameValue = userName.value.toLowerCase()
     const passwordValue = password.value.toLowerCase()
 
-
-    if(usernameValue === "" | passwordValue === ""){
-        event.preventDefault()
+    if(userNameValue === "" | passwordValue === ""){
         alert("Please fill in all fields")
 
         return
     }
 
-    if(usernameValue !== "digitalcollege" || passwordValue !== "123456789"){
-        event.preventDefault()
+    if(userNameValue !== sessionStorage.getItem("userName") || passwordValue !== sessionStorage.getItem("password")){
         alert("Incorrect usarname or password!")
 
         return
     }
 
     alert("Acess granted!")
+
+     window.location.href = "./home.html";
+
 })
 
 checkbox.addEventListener("change", () => {
     
+    const type = password.getAttribute("type")
+
+    if(type !== "password"){
+        password.setAttribute("type", "password")
+        return
+    }
+
+    password.setAttribute("type", "text")
+
 })

@@ -17,7 +17,7 @@ buttonLogin.addEventListener("click", (event) =>{
         return
     }
 
-    if(usernameValue !== "alex" || passwordValue !== "123"){
+    if(usernameValue !== "digitalcollege" || passwordValue !== "123456789"){
         event.preventDefault()
         alert("Incorrect usarname or password!")
 

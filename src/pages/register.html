@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Logger System</title>
+    <title>Register - Logger System</title>
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/form.css">
 
@@ -11,17 +11,24 @@
 <body>
 
     <form>
-        <h1>Login</h1>
+        <h1>Register</h1>
+           
         <div class="inputs">
 
+             <input 
+                id="name-register" 
+                type="text" 
+                placeholder="Name"
+            />
+
             <input 
-                id="username-login" 
+                id="username-register" 
                 type="text" 
                 placeholder="Username"
             />
 
             <input 
-                id="password-login" 
+                id="password-register" 
                 type="password" 
                 placeholder="Password"
             />
@@ -30,20 +37,19 @@
 
         <div class="show">
             <input 
-                id="checkbox-login" 
+                id="checkbox-register" 
                 type="checkbox"
             />
-            <label for="checkbox-login">show password</label>
+            <label for="checkbox-register">show password</label>
         </div>
 
-        <button id="button-login">Login</button>
+        <button id="button-register">register</button>
 
         <div class="recovery">
-            <small>Forgot your password? recover it <a href="#">here</a>.</small>
-            <small>Don't have an account? register <a href="./register.html">here</a>.</small>
+            <small>Do you have an account?? login <a href="./login.html">here</a>.</small>
         </div>
     </form>
     
 </body>
-<script src="../scripts/login.js"></script>
+<script src="../scripts/register.js"></script>
 </html>

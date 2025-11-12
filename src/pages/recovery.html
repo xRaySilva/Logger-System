@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Logger System</title>
+    <title>Recovery - Logger System</title>
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/form.css">
 
@@ -11,39 +11,41 @@
 <body>
 
     <form>
-        <h1>Login</h1>
+        <h1>recovery</h1>
         <div class="inputs">
 
             <input 
-                id="userName-login" 
+                id="userName-recovery" 
                 type="text" 
                 placeholder="Username"
             />
 
             <input 
-                id="password-login" 
+                id="newPassword-recovery" 
                 type="password" 
-                placeholder="Password"
+                placeholder="new password"
+            />
+
+            <input 
+                id="confirm-recovery" 
+                type="password" 
+                placeholder="confirm Password"
             />
 
         </div>
 
         <div class="show">
             <input 
-                id="checkbox-login" 
+                id="checkbox-recovery" 
                 type="checkbox"
             />
-            <label for="checkbox-login">show password</label>
+            <label for="checkbox-recovery">show password</label>
         </div>
 
-        <button id="button-login">Login</button>
+        <button id="button-recovery">recover</button>
 
-        <div class="recovery">
-            <small>Forgot your password? recover it <a href="./recovery.html">here</a>.</small>
-            <small>Don't have an account? register <a href="./register.html">here</a>.</small>
-        </div>
     </form>
     
 </body>
-<script src="../scripts/login.js"></script>
+<script src="../scripts/recovery.js"></script>
 </html>
